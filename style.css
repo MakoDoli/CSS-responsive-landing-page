@@ -248,6 +248,31 @@ button */
   }
 }
 
+/*  CTA  */
+
+.cta {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .cta {
+    text-align: left;
+  }
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("images/bg-tablet-pattern.svg"),
+    url("images/bg-tablet-pattern.svg");
+  opacity: 0.1;
+  background-position: -15rem -5rem, 80rem -42rem;
+  background-repeat: no-repeat;
+}
+
 /* Utility classes*/
 
 .container {
@@ -257,6 +282,30 @@ button */
   margin-inline: auto;
 }
 
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+.vertical-align-center {
+  align-items: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+@media (min-width: 50em) {
+  .justify-self-end-md {
+    justify-self: end;
+  }
+}
 /* .flow > * + * {
   outline: 3px solid cyan;
 } */
@@ -265,23 +314,11 @@ button */
   outline: 3px solid lime;
 } */
 :where(.flow > :not(:first-child)) {
-  outline: 3px solid orange;
   margin-top: var(--flow-spacer, 3em);
 }
 /* :where has lowest specificity */
 div {
   --flow-spacer: 5em;
-}
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
 }
 
 .visually-hidden {
