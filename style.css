@@ -509,6 +509,7 @@ input:where([type="email"]) {
   }
   .a11y-slider-container {
     padding: 0;
+    margin-bottom: var(--size-700);
   }
 }
 @media (min-width: 40em) {
