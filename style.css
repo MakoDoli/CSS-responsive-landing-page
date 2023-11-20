@@ -203,9 +203,9 @@ button */
 }
 
 @media (max-width: 47em) {
-  .primary-footer_wrapper > * {
+  /* .primary-footer_wrapper > * {
     margin-inline: auto;
-  }
+  } */
   /* THIS ABOVE SHOULDNT BE HERE !!!!! */
   .primary-header[data-overlay] {
     position: relative;
@@ -338,7 +338,7 @@ input:where([type="email"]) {
   border-radius: 100vw;
   border: 0;
   padding: var(--size-300) var(--size-400);
-  width: max(100%, 14rem);
+  /* width: max(100%, 14rem); */
 }
 @media (min-width: 47em) {
   .primary-footer_wrapper {
@@ -662,9 +662,9 @@ input:where([type="email"]) {
   margin-top: var(--flow-spacer, 3em);
 }
 /* :where has lowest specificity */
-div {
+/* div {
   --flow-spacer: 5em;
-}
+} */
 
 .visually-hidden {
   position: absolute;
