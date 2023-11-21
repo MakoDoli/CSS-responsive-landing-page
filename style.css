@@ -338,6 +338,7 @@ input:where([type="email"]) {
   border-radius: 100vw;
   border: 0;
   padding: var(--size-300) var(--size-400);
+  width: 100%;
   /* width: max(100%, 14rem); */
 }
 @media (min-width: 47em) {
